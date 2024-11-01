@@ -12,7 +12,13 @@ This project utilizes the PuLP library for linear optimization. It takes weekly 
 
 In `constants.py` there is a variable called `rosters`. Each roster contains the players and their respective roster constraints (Max number of players at each position). There is also a variable called `cols_and_weights` that constains the weights for each fantasy football statistic. Please fill these variables for your respective leagues.
 
-Run the following command to run optimizations:
+1. Set up your virtual environment
+```shell
+python3 -m venv optimize
+source optimize/bin/activate
+```
+
+2. Run the following command to run optimizations:
 ```shell
 python3 optimize.py
 ```
@@ -44,13 +50,7 @@ Tyjae Spears,TEN,RB
 ...
 ```
 
-2. Set up your virtual environment
-```shell
-python3 -m venv optimize
-source optimize/bin/activate
-```
-
-3. Run the program:
+2. Run the program:
 ```shell
 python3 mc_sim.py
 ```
